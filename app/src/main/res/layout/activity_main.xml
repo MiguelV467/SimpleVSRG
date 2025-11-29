@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/game_bg"
+    tools:context=".MainActivity">
+
+    <!-- Score and Combo -->
+    <LinearLayout
+        android:id="@+id/scoreLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/score"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/comboText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="@string/combo"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Game Area -->
+    <FrameLayout
+        android:id="@+id/gameArea"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/scoreLayout"
+        app:layout_constraintBottom_toTopOf="@id/keyContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Lanes will be drawn here -->
+        <LinearLayout
+            android:id="@+id/laneContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <View
+                android:id="@+id/lane1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/lane_1"
+                android:alpha="0.3" />
+
+            <View
+                android:id="@+id/lane2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/lane_2"
+                android:alpha="0.3" />
+
+            <View
+                android:id="@+id/lane3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/lane_3"
+                android:alpha="0.3" />
+
+            <View
+                android:id="@+id/lane4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/lane_4"
+                android:alpha="0.3" />
+        </LinearLayout>
+
+        <!-- Hit Line -->
+        <View
+            android:id="@+id/hitLine"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="120dp"
+            android:background="@color/hit_line" />
+    </FrameLayout>
+
+    <!-- Keys -->
+    <LinearLayout
+        android:id="@+id/keyContainer"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/key1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            android:backgroundTint="@color/lane_1"
+            android:text="D"
+            android:textSize="24sp"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/key2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            android:backgroundTint="@color/lane_2"
+            android:text="F"
+            android:textSize="24sp"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/key3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            android:backgroundTint="@color/lane_3"
+            android:text="J"
+            android:textSize="24sp"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/key4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="2dp"
+            android:backgroundTint="@color/lane_4"
+            android:text="K"
+            android:textSize="24sp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

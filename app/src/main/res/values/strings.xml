@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SimpleVSRG</string>
+    <string name="score">Score: %1$d</string>
+    <string name="combo">Combo: %1$d</string>
+    <string name="ready">¡Listo!</string>
+    <string name="game_over">¡Fin del juego!</string>
+    <string name="final_score">Puntuación final: %1$d</string>
+    <string name="restart">Reiniciar</string>
+</resources>
