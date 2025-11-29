@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:translateX="27"
+        android:translateY="27">
+        <!-- Simplified note icon -->
+        <path
+            android:fillColor="#ecf0f1"
+            android:pathData="M20,20 L38,20 L38,88 L20,88 Z" />
+        <path
+            android:fillColor="#e74c3c"
+            android:pathData="M44,20 L62,20 L62,88 L44,88 Z" />
+        <path
+            android:fillColor="#2ecc71"
+            android:pathData="M68,20 L86,20 L86,88 L68,88 Z" />
+        <path
+            android:fillColor="#f39c12"
+            android:pathData="M92,20 L110,20 L110,88 L92,88 Z" />
+        <!-- Hit line -->
+        <path
+            android:fillColor="#95a5a6"
+            android:pathData="M15,70 L115,70 L115,74 L15,74 Z" />
+    </group>
+</vector>
